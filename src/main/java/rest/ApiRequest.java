@@ -22,8 +22,6 @@ public class ApiRequest {
     public static int getStatus(String url) {
         return httpResponsE(url).getStatusLine().getStatusCode();
     }
-
-
     private static HttpResponse httpResponsE(String url) {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         HttpResponse response = null;

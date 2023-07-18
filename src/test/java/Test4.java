@@ -10,6 +10,7 @@ import rest.ApiRequest;
 import java.util.Arrays;
 import java.util.Collection;
 @RunWith(Parameterized.class)
+
 public class Test4 {
 
     static final String URL = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json";
@@ -32,7 +33,6 @@ public class Test4 {
         return Arrays.asList("USD", "AUD", "CAD", "HUF");
 
     }
-
     @Test
     public void tets2() {
         for (Exchange l : exchange) {
@@ -40,6 +40,5 @@ public class Test4 {
                 System.out.println(l.r030 + " = " + l.txt + "; " + l.rate + "; " + l.cc + "; " + l.exchangedate);
             }
         }
-
     }
 }
