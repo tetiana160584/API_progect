@@ -19,7 +19,6 @@ public class ApiRequest {
         return result;
     }
 
-
     public static int getStatus(String url) {
         return httpResponsE(url).getStatusLine().getStatusCode();
     }

@@ -40,5 +40,4 @@ public class Test5 {
             System.out.println(l.r030 + " = " + l.txt + "; " + l.rate + "; " + l.cc + "; " + l.exchangedate);
         }
     }
-
 }

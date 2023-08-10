@@ -10,5 +10,4 @@ public class Exchange {
     public void setCc(String cc) {
         this.cc = cc;
     }
-
 }
