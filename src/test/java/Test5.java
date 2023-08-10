@@ -34,11 +34,13 @@ public class Test5 {
 
     }
     @Test
-    public void tets2() {
+    public void testExchangeData() {
         for (Exchange l : exchange) {
-            if (l.cc.equals(currencyCode)) {
-                System.out.println(l.r030 + " = " + l.txt + "; " + l.rate + "; " + l.cc + "; " + l.exchangedate);
-            }
+            l.setCc(currencyCode); // Изменяем поле cc на текущее значение currencyCode
+            System.out.println(l.r030 + " = " + l.txt + "; " + l.rate + "; " + l.cc + "; " + l.exchangedate);
         }
     }
+
+
+
 }

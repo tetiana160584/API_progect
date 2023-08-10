@@ -6,4 +6,8 @@ public class Exchange {
     public double rate;
     public String cc;
     public String exchangedate;
+
+    public void setCc(String cc) {
+        this.cc = cc;
+    }
 }
